@@ -5,6 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Git and GitHub</title>
     <link rel="stylesheet" href="styles/git.css">
+    <style>
+        /* Universal selector */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* Element selector */
+        h1{
+            color: rgb(5, 219, 102);
+            text-align: center;
+        }
+        img{
+            width: 70%;
+            /* display: none; */
+            /* visibility: hidden; */
+        }
+        /* Class selector */
+        .first{
+            color: rgb(132, 9, 239);
+            border: 2px solid rgb(7, 115, 217);
+            height: 30vh;
+            margin: 20px;
+            border-radius: 30px;
+            padding: 20px;
+            box-shadow: 20px 15px 50px green;
+
+        }
+        /* grouping selector */
+        .second,.fourth {
+            color: rgb(86, 104, 94);
+            background-color: rgba(92, 121, 216, 0.219);
+            height: 20vh;
+            border: 3px solid greenyellow;
+            margin: 30px;
+            padding: 30px;
+            border-radius: 30px;
+        }
+        /* id selector */
+        #third{
+            background-color:aliceblue;
+            color: violet;
+            height: 30vh;
+            border: 5px solid rgb(202, 5, 228);
+            margin: 30px;
+            padding: 30px;
+            border-radius: 30px;
+            display: inline-block;
+        }
+        /* attribute selector */
+        input[type="email"]{
+            color: blue;
+        }
+        input[type="submit"]
+        {
+            margin: 5px;
+            color: rgb(18, 210, 146);
+            padding: 3px 12px;
+
+        }
+        input[type="reset"]{
+            margin: 5px;
+            color: rgb(18, 210, 146);
+            padding: 3px 20px;
+            display: block;
+        }
+
+    </style>
 </head>
 <body>
     <div class="contain">
@@ -17,6 +84,23 @@
             <li>git remote add origin "link"</li>
             <li>git push -u origin main</li>
         </ol>
+    </div>
+    <h1>Practice different Type of selector</h1>
+    <p class="first">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta neque fugit, obcaecati provident praesentium laborum tenetur enim officia ullam, labore quam et amet iure quidem possimus non blanditiis eius explicabo commodi hic vel numquam eligendi! Eum veniam quae dolor saepe.</p>
+    <p class="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic saepe commodi adipisci vero et. Quo illum repellendus ipsam nihil recusandae possimus labore voluptates earum, expedita ipsum molestias aliquid. Ipsam nemo in totam eveniet alias. Porro, maiores eligendi laboriosam eaque repellendus dolorum molestiae suscipit, amet dicta distinctio labore maxime deleniti ipsa at ab commodi, architecto quam. Velit enim minima laboriosam beatae assumenda voluptates adipisci, nobis omnis deserunt ex officia.</p>
+    <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit praesentium quisquam, ab maiores voluptatem magnam laudantium quibusdam doloremque modi rem quo, ut eveniet! Sequi tempore quis, quos dolores necessitatibus nemo esse officiis in deleniti aut. Quaerat, harum dolorum.</p>
+    <div class="container">
+        <img src="https://career.comarch.com/files-com/file_45/good_programmer_comarch.jpg" alt="A good programmer" class="photo">
+        <p class="fourth">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus at nisi veritatis molestias temporibus, eum qui labore facere? Sapiente reprehenderit esse quas eos. Dolores natus labore id explicabo ab doloribus sit perspiciatis aliquam. Possimus fuga, consectetur fugiat id at consequuntur asperiores expedita et, culpa dignissimos mollitia quasi. Rerum, praesentium deserunt!</p>
+        <a href="https://github.com/abubakar1010?tab=repositories"  id="linked">My Repositories</a><br><br>
+        <form action="">
+            <label for="mail">Name:</label>
+        <input type="email" name="mail" id="mail"> <br><br>
+        <label for="passkey">password:</label>
+        <input type="password" name="pass" id="key"><br><br>
+        <input type="submit" value="Register">
+        <input type="reset" value="Clear">
+        </form>
     </div>
 </body>
 </html>
